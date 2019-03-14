@@ -16,7 +16,68 @@
 
 </head>
 <body>
-  <h1> Calculo IMC</h1>
- 
+  <div class="formStyle container">
+    <!-- Titulo -->
+    <div class="row">
+      <div class="col-xs-12"> 
+        <h1>Gasto Calórico Diário</h1>
+      </div>
+    </div>
+    <div class="form-group">
+      <!-- Atividade física -->
+      <div class="row">
+        <div class="col-xs-12">
+            <select name="tipo">
+              <option value="none">Taxa de atividade física</option>
+              <option value="1.2">Sedentário (pouco ou nenhum exercício)</option>
+              <option value="1.375">Levemente Ativo (exercício leve 1 a 3x por semana)</option>
+              <option value="1.55">Moderadamente Ativo (exercício moderado, esportes 3 a 5x por semana)</option>
+              <option value="1.725">Altamente Ativo (exercício pesado de 5 a 6x por semana)</option>
+              <option value="1.9">Extremamente Ativo (exercício pesado diariamente até 2x por dia)</option>
+            </select>
+        </div>
+      </div>
+      
+      <div class="row">
+        <!-- Altura -->
+        <div class="col-xs-6">
+          <input type="text" placeholder="Altura(cm)">
+        </div>
+         <!-- Peso -->
+        <div class="col-xs-6">
+          <input type="text" placeholder="Peso(Kg)">
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Idade -->
+        <div class="col-xs-6">
+          <input type="text" placeholder="Idade">
+        </div>
+        <!-- Sexo -->
+        <div class="col-xs-6">
+          <select  class="sexo" name="tipo" id="">
+              <option value="none">Sexo</option>
+              <option value="">Masculino</option>
+              <option value="">Feminino</option>
+          </select>
+        </div>
+      </div>
+      <!-- Resultado -->
+      <div class="row">
+        <div class="col-xs-12">
+          <button id="btnResultado" class="btn btn-block"> Calcular </button>  
+        </div>  
+      </div>
+      <!-- Rodapé --> 
+      <div class="row footerStyle">
+        <div class="col-xs-12">
+          <img src="img/logoFacebook.jpg" alt="">
+          <img src="img/logoInstagram.jpg" alt="">
+          <img src="img/logoTwitter.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>  
 </body>
 </html>
