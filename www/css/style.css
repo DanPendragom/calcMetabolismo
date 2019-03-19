@@ -1,0 +1,199 @@
+/* BASE DO APLICATIVO */
+body{
+  margin: 80px 0px 20px 7px;
+  background-color: white; 
+}
+
+/* FONTE ESTILO */
+@font-face{
+  font-family: "Google Sans";
+  src: url('../fonts/GoogleSans-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* TITULO */
+h1{
+  position: relative;
+  top: -8px;
+  font-family: "Google Sans";
+  font-size: 38px;
+  text-align: center;
+  font-weight: bold;
+  color: #CBD3D8;
+}
+
+/* INPUTS DE TEXTO */
+input,select{
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-family: "Google Sans";
+  font-size: 28px;
+}
+input{
+  position: relative;
+  top: -10px;
+  text-align: center;
+  color: white;
+}
+::placeholder{
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* REMOVER SETAS DA INPUTS */
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+   input[type=number] { 
+   -moz-appearance: textfield;
+}
+
+select{
+  text-align: center;
+  margin: 15% 0 15% 0;
+  color: rgb(255, 224, 138);
+  font-family: "Google Sans";
+}
+
+/* BOTÕES */
+button{
+  margin: 20px 10px 0px 0px;
+  color: white;
+  font-family: "Google Sans";
+}
+
+/* AJUSTE DOS ICONES */
+#icon{
+  position: relative;
+  left: 28px;
+  top: -15px;
+}
+
+/* MODELO DOS HEXAGONOS */
+.hexagono {
+      width: 117px;
+      height: 64px;
+      background: rgb(17, 173, 221);
+      position: relative;
+    }
+    .hexagono:before {
+      content: "";
+      position: absolute;
+      top: -30px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 58px solid transparent;
+      border-right: 58px solid transparent;
+      border-bottom: 30px solid rgb(17, 173, 221);
+    }
+    .hexagono:after {
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 58px solid transparent;
+      border-right: 58px solid transparent;
+      border-top: 30px solid rgb(17, 173, 221);
+    }
+
+/* ESPAÇO ENTRE OS HEXAGONOS */
+.espaco-curto{
+  margin: 20px 0px 20px 15px;
+}
+.espaco-longo{
+  margin: 20px 0px 20px 81px;
+}
+
+/* ----- CORES DOS EXAGONOS ------ */
+
+/* TITULO */
+.h-cor-1.hexagono {
+      background: transparent;
+    }
+.h-cor-1.hexagono:before {
+      border-bottom: 30px solid transparent;
+    }
+.h-cor-1.hexagono:after {
+      border-top: 30px solid transparent;
+    }
+
+/* NADA */
+.h-cor-2.hexagono {
+      background: #CBD3D8;
+    }
+.h-cor-2.hexagono:before {
+      border-bottom: 30px solid #CBD3D8;
+    }
+.h-cor-2.hexagono:after {
+      border-top: 30px solid #CBD3D8;
+    }
+
+/* ALTURA */
+.h-cor-3.hexagono {
+      background: #8AD8F4;
+    }
+.h-cor-3.hexagono:before {
+      border-bottom: 30px solid #8AD8F4;
+    }
+.h-cor-3.hexagono:after {
+      border-top: 30px solid #8AD8F4;
+    }
+
+/* KG */
+.h-cor-4.hexagono {
+      background: #3195DF;
+    }
+.h-cor-4.hexagono:before {
+      border-bottom: 30px solid #3195DF;
+    }
+.h-cor-4.hexagono:after {
+      border-top: 30px solid #3195DF;
+    }
+
+/* IDADE */
+.h-cor-5.hexagono {
+      background: #91C7EE;
+    }
+.h-cor-5.hexagono:before {
+      border-bottom: 30px solid #91C7EE;
+    }
+.h-cor-5.hexagono:after {
+      border-top: 30px solid #91C7EE;
+    }
+
+/* SOU */
+.h-cor-6.hexagono {
+      background: #4A7BC6;
+    }
+.h-cor-6.hexagono:before {
+      border-bottom: 30px solid #4A7BC6;
+    }
+.h-cor-6.hexagono:after {
+      border-top: 30px solid #4A7BC6;
+    }
+
+/* CALCULAR */
+.h-cor-7.hexagono {
+      background: #DD7D9A;
+    }
+.h-cor-7.hexagono:before {
+      border-bottom: 30px solid #DD7D9A;
+    }
+.h-cor-7.hexagono:after {
+      border-top: 30px solid #DD7D9A;
+    }
+
+/* SEXO */
+.h-cor-8.hexagono {
+      background: #F6B598;
+    }
+.h-cor-8.hexagono:before {
+      border-bottom: 30px solid #F6B598;
+    }
+.h-cor-8.hexagono:after {
+      border-top: 30px solid #F6B598;
+    }
