@@ -4,31 +4,54 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <!-- JAVASCRIPT -->
   <script src="components/loader.js"></script>
   <script src="lib/onsenui/js/onsenui.min.js"></script>
-
+  <script src="components/jquery-3.3.1.min.js"></script>
+  <!-- CSS -->
   <link rel="stylesheet" href="components/loader.css">
   <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
   <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="components/jquery-3.3.1.min.js"></script>
-
 </head>
 <body>
+
   <div class="formStyle container">
-    <!-- Titulo -->
-    <div class="row">
-      <div class="col-xs-12"> 
-        <h1>Gasto Calórico Diário</h1>
-      </div>
-    </div>
-    <div class="form-group">
-      <!-- Atividade física -->
+
       <div class="row">
-        <div class="col-xs-12">
+        <!-- TITULO -->
+        <div class="col-xs-6 hexagono espaco-longo h-cor-1">
+          <h1>IMC</h1>
+        </div>
+         <!-- NADA -->
+        <div class="col-xs-6 hexagono espaco-curto h-cor-2">
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- ALTURA -->
+        <div class="col-xs-6 hexagono espaco-curto h-cor-3">
+          <img id="icon" src="img/altura.png" height="32" width="32">
+          <input type="number" placeholder="X.XX">
+        </div>
+         <!-- PESO -->
+        <div class="col-xs-6 hexagono espaco-curto h-cor-4">
+          <img id="icon" src="img/peso.png" height="32" width="32">
+          <input type="number" placeholder="KG">
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- IDADE -->
+        <div class="col-xs-6 hexagono espaco-longo h-cor-5">
+          <img id="icon" src="img/idade.png" height="32" width="32">
+          <input type="number" placeholder="IDADE">
+        </div>
+        <!-- SOU -->
+        <div class="col-xs-6 hexagono espaco-curto h-cor-6">
             <select name="tipo">
-              <option value="none">Taxa de atividade física</option>
+              <option value="none">SOU</option>
               <option value="1.2">Sedentário (pouco ou nenhum exercício)</option>
               <option value="1.375">Levemente Ativo (exercício leve 1 a 3x por semana)</option>
               <option value="1.55">Moderadamente Ativo (exercício moderado, esportes 3 a 5x por semana)</option>
@@ -37,46 +60,18 @@
             </select>
         </div>
       </div>
-      
+
       <div class="row">
-        <!-- Altura -->
-        <div class="col-xs-6">
-          <input type="text" placeholder="Altura(cm)">
-        </div>
-         <!-- Peso -->
-        <div class="col-xs-6">
-          <input type="text" placeholder="Peso(Kg)">
+        <!-- CALCULAR -->
+        <div class="col-xs-12">
+          <button id="btnResultado" class="btn btn-group hexagono h-cor-7"> CALCULAR </button>
+        <!-- SEXO -->
+          <button value="masc" id="btnSexo" class="btn btn-group hexagono h-cor-8">
+            <img src="img/sexo_masc.png" height="48" width="48">
+          </button>
         </div>
       </div>
 
-      <div class="row">
-        <!-- Idade -->
-        <div class="col-xs-6">
-          <input type="text" placeholder="Idade">
-        </div>
-        <!-- Sexo -->
-        <div class="col-xs-6">
-          <select  class="sexo" name="tipo" id="">
-              <option value="none">Sexo</option>
-              <option value="">Masculino</option>
-              <option value="">Feminino</option>
-          </select>
-        </div>
-      </div>
-      <!-- Resultado -->
-      <div class="row">
-        <div class="col-xs-12">
-          <button id="btnResultado" class="btn btn-block"> Calcular </button>  
-        </div>  
-      </div>
-      <!-- Rodapé --> 
-      <div class="row footerStyle">
-        <div class="col-xs-12">
-          <img src="img/logoFacebook.jpg" alt="">
-          <img src="img/logoInstagram.jpg" alt="">
-          <img src="img/logoTwitter.jpg" alt="">
-        </div>
-      </div>
     </div>
   </div>  
 </body>
