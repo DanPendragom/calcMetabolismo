@@ -8,6 +8,7 @@
   <script src="components/loader.js"></script>
   <script src="lib/onsenui/js/onsenui.min.js"></script>
   <script src="components/jquery-3.3.1.min.js"></script>
+  <script src="components/calculo.js"></script>
   <!-- CSS -->
   <link rel="stylesheet" href="components/loader.css">
   <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
@@ -33,12 +34,12 @@
         <!-- ALTURA -->
         <div class="col-xs-6 hexagono espaco-curto h-cor-3">
           <img id="icon" src="img/altura.png" height="32" width="32">
-          <input type="number" placeholder="X.XX">
+          <input id="altura"type="number" placeholder="X.XX">
         </div>
          <!-- PESO -->
         <div class="col-xs-6 hexagono espaco-curto h-cor-4">
           <img id="icon" src="img/peso.png" height="32" width="32">
-          <input type="number" placeholder="KG">
+          <input id="kg"type="number" placeholder="KG">
         </div>
       </div>
 
@@ -46,11 +47,11 @@
         <!-- IDADE -->
         <div class="col-xs-6 hexagono espaco-longo h-cor-5">
           <img id="icon" src="img/idade.png" height="32" width="32">
-          <input type="number" placeholder="IDADE">
+          <input id="idade"type="number" placeholder="IDADE">
         </div>
         <!-- SOU -->
         <div class="col-xs-6 hexagono espaco-curto h-cor-6">
-            <select name="tipo">
+            <select id="atvFisica" name="tipo">
               <option value="none">SOU</option>
               <option value="1.2">Sedentário (pouco ou nenhum exercício)</option>
               <option value="1.375">Levemente Ativo (exercício leve 1 a 3x por semana)</option>
@@ -64,7 +65,7 @@
       <div class="row">
         <!-- CALCULAR -->
         <div class="col-xs-12">
-          <button id="btnResultado" class="btn btn-group hexagono h-cor-7"> CALCULAR </button>
+          <a href="res.html"><button id="btnResultado" class="btn btn-group hexagono h-cor-7"> CALCULAR </button></a>
         <!-- SEXO -->
           <button value="masc" id="btnSexo" class="btn btn-group hexagono h-cor-8">
             <img src="img/sexo_masc.png" height="48" width="48">
