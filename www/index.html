@@ -23,10 +23,13 @@
       <div class="row">
         <!-- TITULO -->
         <div class="col-xs-6 hexagono espaco-longo h-cor-1">
-          <h1>IMC</h1>
+          <input type="text" id="titulo" readonly="true">
+          <input type="text" id="titulo2" readonly="true">
         </div>
-         <!-- NADA -->
+         <!-- RESPOSTA -->
         <div class="col-xs-6 hexagono espaco-curto h-cor-2">
+          <input style="font-size:24pt; font-weight:bolder;"type="text" readonly="true" id="resposta">
+          <input style="font-size:16pt;"type="text" readonly="true" id="detalhes">
         </div>
       </div>
 
@@ -65,7 +68,7 @@
       <div class="row">
         <!-- CALCULAR -->
         <div class="col-xs-12">
-          <a href="res.html"><button id="btnResultado" class="btn btn-group hexagono h-cor-7"> CALCULAR </button></a>
+          <button id="btnResultado" class="btn btn-group hexagono h-cor-7"> CALCULAR </button>
         <!-- SEXO -->
           <button value="masc" id="btnSexo" class="btn btn-group hexagono h-cor-8">
             <img onclick="btSexo()" id="btnSexo1" src="../img/sexo_masc.png" height="48" width="48">

@@ -13,15 +13,15 @@ body{
 }
 
 /* TITULO */
-h1{
+#titulo, #titulo2{
   position: relative;
   top: -8px;
   font-family: "Google Sans";
-  font-size: 38px;
+  font-size: 18pt;
   text-align: center;
   font-weight: bold;
-  color: #CBD3D8;
-}
+  color: rgb(221, 188, 0);
+} 
 
 /* INPUTS DE TEXTO */
 input,select{
